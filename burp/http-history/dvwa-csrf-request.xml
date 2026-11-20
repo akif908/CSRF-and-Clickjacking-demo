@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2026.11.2" exportTime="Fri Nov 20 17:53:20 GMT+06:00 2026">
+  <item>
+    <time>Fri Nov 20 16:31:14 GMT+06:00 2026</time>
+    <url><![CDATA[http://127.0.0.1:4280/vulnerabilities/csrf/?password_new=9083&password_conf=9083&Change=Change]]></url>
+    <host ip="127.0.0.1">127.0.0.1</host>
+    <port>4280</port>
+    <protocol>http</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/vulnerabilities/csrf/?password_new=9083&password_conf=9083&Change=Change]]></path>
+    <extension>null</extension>
+    <request base64="true"><![CDATA[R0VUIC92dWxuZXJhYmlsaXRpZXMvY3NyZi8/cGFzc3dvcmRfbmV3PTkwODMmcGFzc3dvcmRfY29uZj05MDgzJkNoYW5nZT1DaGFuZ2UgSFRUUC8xLjENCkhvc3Q6IDEyNy4wLjAuMTo0MjgwDQpzZWMtY2gtdWE6ICJDaHJvbWl1bSI7dj0iMTU3IiwgIk5vdC1BLkJyYW5kIjt2PSI5OSINCnNlYy1jaC11YS1tb2JpbGU6ID8wDQpzZWMtY2gtdWEtcGxhdGZvcm06ICJXaW5kb3dzIg0KVXBncmFkZS1JbnNlY3VyZS1SZXF1ZXN0czogMQ0KVXNlci1BZ2VudDogTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzE1Ny4wLjAuMCBTYWZhcmkvNTM3LjM2DQpBY2NlcHQ6IHRleHQvaHRtbCxhcHBsaWNhdGlvbi94aHRtbCt4bWwsYXBwbGljYXRpb24veG1sO3E9MC45LGltYWdlL2p4bCxpbWFnZS9hdmlmLGltYWdlL3dlYnAsaW1hZ2UvYXBuZywqLyo7cT0wLjgsYXBwbGljYXRpb24vc2lnbmVkLWV4Y2hhbmdlO3Y9YjM7cT0wLjcNClNlYy1GZXRjaC1TaXRlOiBzYW1lLXNpdGUNClNlYy1GZXRjaC1Nb2RlOiBuYXZpZ2F0ZQ0KU2VjLUZldGNoLURlc3Q6IGRvY3VtZW50DQpSZWZlcmVyOiBodHRwOi8vMTI3LjAuMC4xOjgwODQvDQpBY2NlcHQtRW5jb2Rpbmc6IGd6aXAsIGRlZmxhdGUsIGJyDQpBY2NlcHQtTGFuZ3VhZ2U6IGVuLVVTLGVuO3E9MC45DQpDb29raWU6IFBIUFNFU1NJRD04OTIzMDg2YTI3ZmNmNDdhMWI3Yjk3NTYzNjcyZjU1ZDsgc2VjdXJpdHk9bG93DQpDb25uZWN0aW9uOiBrZWVwLWFsaXZlDQoNCg==]]></request>
+    <status>302</status>
+    <responselength>435</responselength>
+    <mimetype></mimetype>
+    <response base64="true"><![CDATA[SFRUUC8xLjEgMzAyIEZvdW5kDQpEYXRlOiBGcmksIDIwIE5vdiAyMDI2IDEwOjMxOjE0IEdNVA0KU2VydmVyOiBBcGFjaGUvMi40LjY4IChEZWJpYW4pDQpYLUZyYW1lLU9wdGlvbnM6IERFTlkNCkNvbnRlbnQtU2VjdXJpdHktUG9saWN5OiBmcmFtZS1hbmNlc3RvcnMgJ25vbmUnDQpYLVBvd2VyZWQtQnk6IFBIUC84LjUuMTENCkV4cGlyZXM6IFRodSwgMTkgTm92IDE5ODEgMDg6NTI6MDAgR01UDQpDYWNoZS1Db250cm9sOiBuby1zdG9yZSwgbm8tY2FjaGUsIG11c3QtcmV2YWxpZGF0ZQ0KUHJhZ21hOiBuby1jYWNoZQ0KTG9jYXRpb246IGluZGV4LnBocA0KQ29udGVudC1MZW5ndGg6IDANCktlZXAtQWxpdmU6IHRpbWVvdXQ9NSwgbWF4PTEwMA0KQ29ubmVjdGlvbjogS2VlcC1BbGl2ZQ0KQ29udGVudC1UeXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTgNCg0K]]></response>
+    <comment></comment>
+  </item>
+</items>

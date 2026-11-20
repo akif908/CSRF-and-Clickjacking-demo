@@ -1,0 +1,11 @@
+# Videos over GitHub's 100 MB per-file limit — kept locally, not pushed
+CS-record.mp4
+clickbandit/recordings/clickbandit_recording_complete.mp4
+
+# Excluded by project decision (Burp session recording, 62 MB)
+burp/http-history/dvwa-csrf-request.mp4
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store

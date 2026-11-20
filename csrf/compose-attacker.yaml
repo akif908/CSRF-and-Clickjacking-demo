@@ -1,0 +1,9 @@
+services:
+  csrf-attacker:
+    build:
+      context: ./attacker
+      dockerfile: Dockerfile
+    container_name: p9-csrf-attacker
+    ports:
+      - "127.0.0.1:8084:80"
+    restart: unless-stopped

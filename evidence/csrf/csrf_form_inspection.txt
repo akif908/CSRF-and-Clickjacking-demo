@@ -1,0 +1,22 @@
+here's all the form section code:
+
+<alv class= body_padded >
+<h1>Vulnerability: Cross Site Request Forgery (CSRF)</h1>
+<div class="vulnerable_code_area">
+<h3>Change your admin password :< /h3>
+<br>
+<div id="test_credentials">( .< /div>
+<br>
+<form action="#" method="GET">
+" New password:"
+<br>
+<input type="password" autocomplete="off" name="password_new">
+<br>
+" Confirm new password:"
+<br>
+<input type="password" autocomplete="off" name="password_conf">
+<br>
+
+<br>
+<input type="submit" value="Change" name="Change">
+</form>

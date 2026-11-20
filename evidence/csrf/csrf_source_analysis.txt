@@ -1,0 +1,27 @@
+P9 - CSRF Baseline Source Analysis
+
+Target: DVWA
+Security Level: Low
+
+Form:
+- Method: GET
+- Action: #
+- New password: password_new
+- Confirmation: password_conf
+- Hidden CSRF token: Absent
+
+Server-side implementation:
+- Processes GET parameter Change.
+- Checks whether new password and confirmation match.
+- Escapes and hashes the new password using MD5.
+- Updates the currently authenticated user's password.
+
+Missing protections in low.php:
+- CSRF token validation
+- Current-password verification
+- Origin/Referer validation
+
+Conclusion:
+The Low-security implementation lacks application-level
+CSRF token validation. Browser cookie policies may still
+influence cross-site request behavior.

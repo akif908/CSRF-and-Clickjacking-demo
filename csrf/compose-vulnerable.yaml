@@ -1,0 +1,9 @@
+services:
+  csrf-vulnerable:
+    build:
+      context: ./vulnerable
+      dockerfile: Dockerfile
+    container_name: p9-csrf-vulnerable
+    ports:
+      - "127.0.0.1:8083:80"
+    restart: unless-stopped

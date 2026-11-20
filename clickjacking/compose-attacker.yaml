@@ -1,0 +1,9 @@
+services:
+  clickjacking-attacker:
+    build:
+      context: ./attacker
+      dockerfile: Dockerfile
+    container_name: p9-clickjacking-attacker
+    ports:
+      - "127.0.0.1:8086:80"
+    restart: unless-stopped

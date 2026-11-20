@@ -1,0 +1,9 @@
+services:
+  csrf-demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: p9-csrf-demo
+    ports:
+      - "127.0.0.1:8081:80"
+    restart: unless-stopped

@@ -1,0 +1,12 @@
+﻿HTTP/1.1 200 OK
+Date: Sun, 15 Nov 2026 13:45:27 GMT
+Server: Apache/2.4.69 (Debian) PHP/8.3.36
+X-Frame-Options: DENY
+Content-Security-Policy: frame-ancestors 'none'
+X-Powered-By: PHP/8.3.36
+Set-Cookie: PHPSESSID=1bc77c612d6b5782ae5a607f9c52b64a; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+

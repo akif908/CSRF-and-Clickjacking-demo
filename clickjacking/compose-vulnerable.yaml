@@ -1,0 +1,9 @@
+services:
+  clickjacking-vulnerable:
+    build:
+      context: ./vulnerable
+      dockerfile: Dockerfile
+    container_name: p9-clickjacking-vulnerable
+    ports:
+      - "127.0.0.1:8085:80"
+    restart: unless-stopped

@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protected CSRF Test</title>
+</head>
+<body>
+    <h1>Protected CSRF Demonstration</h1>
+    <p>This request intentionally contains no CSRF token.</p>
+
+    <form action="http://127.0.0.1:8081" method="POST">
+        <input type="hidden" name="preference" value="blue">
+        <button type="submit">Test Protected Application</button>
+    </form>
+</body>
+</html>

